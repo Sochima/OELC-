@@ -1,0 +1,1310 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+
+html, body {
+  box-sizing: border-box;
+  font-size: 1.05rem;
+  font-family: "Lato", serif;
+  color: black;
+  height: 100vh;
+  margin: 0;
+}
+
+main
+{
+  height: 100%;
+}
+section
+{
+  width: 100%;
+  height: 66.66vh;
+  margin-bottom: 10vh;
+
+
+
+
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-style: "Montserrat";
+  font-weight: bold;
+}
+
+h1
+{
+  font-size: 3.125rem;
+}
+
+p
+{
+
+  font-size: 1rem;
+}
+
+a
+{
+  color: black;
+}
+
+a:hover
+{
+  color: #B41C83;
+}
+
+footer
+{
+
+  background: #EEC51B;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+
+
+#loader
+{
+  display:flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#main-Page {
+  display: none;
+  text-align: center;
+}
+
+/* ************************ Globals *******************************/
+.container
+{
+  width: 100%;
+}
+
+
+.navbar {
+  padding: 0.8rem;
+  font-size: 1.25rem;
+}
+
+.btn
+{
+
+  background: #B41C83;
+  border-radius: 0;
+  font-size: 1.875rem;
+
+}
+
+.btn:hover
+{
+  background: #bb368b;
+  border-color: #ce6aa5;
+}
+
+.bg-img
+{
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 66.4vh;
+}
+
+.hero
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 70vh;
+}
+
+.section-header
+{
+  padding-top: 1em;
+}
+
+.section
+{
+  padding: 0;
+}
+.prog-text
+{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+.serv-md
+{
+  padding: 2em;
+}
+.enroll-bg
+{
+  background: url("../assets/boy.png");
+  background-position: top;
+  background-size: cover;
+
+}
+.contact
+{
+  display: flex;
+  flex-direction: column;
+
+}
+.contact-bg
+{
+  position: relative;
+  background: #FFFFFF;
+
+}
+
+.contact-bg::before
+{
+  content: " ";
+  position: absolute;
+  background-image: url("../assets/phone.png");
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+
+
+.contact-btn
+{
+  background: #FFFFFF;
+}
+.contact-btn:hover
+{
+  background: #c2c2c2;
+  border-color: #9b9b9b;
+}
+
+.con-md
+{
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  max-width: 40vw;
+}
+.contact-text
+{
+  position: relative;
+  color: #000;
+  z-index: 2;
+}
+
+.footer-text
+{
+  position:relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.copyright
+{
+  padding-bottom: 4vh;
+}
+
+.footer-logo
+{
+  width: 10vw;
+  height: 10vh;
+  object-fit: contain;
+}
+
+.social-icons
+{
+  display: flex;
+  justify-content: flex-end;
+
+
+}
+
+.fab
+{
+  font-size: 1.5rem;
+  margin-right: 1em;
+}
+
+.row
+{
+  width: 100%;
+  margin: 0;
+}
+/* ************************ Globals End *******************************/
+
+
+.hero-text
+{
+  font-size: 6.25rem;
+  color: #FFFFFF;
+}
+
+.hero-btn
+{
+  width: 100%;
+}
+
+
+
+
+
+
+
+/* ************************ Index *******************************/
+
+/* Slider */
+
+.carousel-caption
+{
+  width: 50%;
+  margin-bottom: 10em;
+  text-align: left;
+}
+
+/* Slider End */
+
+
+
+/* Colored Boxes */
+
+.c-box
+{
+  height: 26.5vh;
+}
+
+.clr-btn
+{
+  width:100%;
+  height: 26vh;
+  border: 0.2vw solid white;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-style: "Montserrat";
+  font-weight: bold;
+  padding: 0;
+
+}
+.colored-boxes
+{
+  padding: 0;
+}
+.colored-box
+{
+  height: 26vh;
+  padding: 0;
+}
+
+.clr-btn-inf
+{
+  background: #BCCB2B;
+}
+.clr-btn-inf:hover
+{
+  background: #c8d251;
+  border-color: #d8dd7f;
+}
+
+.clr-btn-tod
+{
+  background: #EEC51B;
+}
+
+.clr-btn-tod:hover
+{
+  background: #f4cd49;
+  border-color: #fbd97a;
+}
+
+/* Color Boxes End */
+
+/* Welcome */
+
+.welcome
+{
+
+
+}
+
+.welcome-text
+{
+  padding: 2em;
+}
+
+/* Welcome End */
+
+/* Programs  */
+
+.prog-bg
+{
+  background: url("../assets/blocks.png");
+  background-size: cover;
+  padding: 0;
+}
+
+
+.prog-body
+{
+  padding: 2em;
+
+  max-width: 20vw;
+}
+
+/* Programs End */
+
+/* Services */
+.services-bg
+{
+  background: url("../assets/girls_playing.png");
+  background-size: cover;
+
+}
+
+
+/* Services End */
+
+
+/* ************************ Index End  *******************************/
+
+
+
+
+
+
+/* ************************ Enroll *******************************/
+
+.enroll-section
+{
+  height: auto;
+}
+.enroll-form
+{
+  display: flex;
+  padding-bottom: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ************************ Enroll End *******************************/
+
+
+
+
+
+/* ************************ OELC *******************************/
+
+.oelc-hero
+{
+  background: url("../assets/bubbles.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.offer
+{
+  background: #BCCB2B;
+}
+
+.person {
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.person1-img {
+  background: url("../assets/person1.png");
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.person2-img {
+  background: url("../assets/person2.png");
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.person3-img {
+  background: url("../assets/person3.png");
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.person4-img {
+  background: url("../assets/person4.png");
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+
+/* ************************ OELC End *******************************/
+
+
+
+
+
+
+
+
+/* ************************ Programs *******************************/
+
+.prog-hero
+{
+  background: url("../assets/blocks.png");
+  background-size: cover;
+}
+.program-caption
+{
+  color: #FFFFFF;
+  width: 50%;
+  margin-bottom:10em;
+  margin-right: 30em;
+  padding-top: 20em;
+}
+
+
+/* Picture Boxes */
+
+.p-box
+{
+  height: 38vh;
+}
+
+.box {
+  height: 37vh;
+  width: 28.95vw;
+  position: relative;
+  margin-left: 3.40vw;
+  margin-right: 0.5vw;
+}
+
+
+
+.picture-boxes {
+  margin-bottom: 4vh;
+}
+
+.frame-box {
+  position: absolute;
+  left: 0;
+  width: 25vw;
+  height: 36vh;
+  /* border: 2px solid white; */
+  /* justify-content: center; */
+}
+
+.green-frame {
+  background-color: #BCCB2B;
+}
+
+.yellow-frame {
+  background-color: #EEC51B;
+}
+
+.red-frame {
+  background-color: #D44028;
+}
+
+.picture {
+  display: flex;
+  position: absolute;
+  width: 27.5vw;
+  height: 35vh;
+  margin-top: 1.67vh;
+  margin-left: 1.46vw;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-style: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture-box-infant {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/play.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+
+.picture-box-toddler {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bubbles.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+
+.picture-box-kinder {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/paint.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+
+
+/* Picture Boxes End  */
+
+
+/* Infant */
+
+
+.infant-bg
+{
+  background: url("../assets/infant.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.toddler-bg
+{
+  background: url("../assets/toddler.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.kinder-bg
+{
+  background: url("../assets/kinder.png");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Infant End */
+
+/* ************************ Programs End *******************************/
+
+
+
+
+
+
+
+
+/* ************************ Contact *******************************/
+
+
+.contact-hero {
+  background: url("../assets/phone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+/* ************************ Contact End *******************************/
+
+
+
+
+
+
+
+/* ************************ Infant *******************************/
+.prog-img {
+  max-height: 50vh;
+  max-width: 50vw;
+  margin-top: 10vh;
+}
+
+.infant-hero
+{
+  background: url("../assets/infant.png");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+/* ************************ Infant End *******************************/
+
+
+
+
+/* ************************ Toddler *******************************/
+.toddler-hero {
+  background: url("../assets/toddler.png");
+  background-position: center;
+  background-size: cover;
+}
+
+ /* ************************ Toddler End *******************************/
+
+
+
+ /* ************************ Kinder  *******************************/
+
+ .kinder-hero {
+   background: url("../assets/kinder.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ /* ************************ Kinder End *******************************/
+
+
+
+
+
+
+
+ @media screen and (max-width: 767px)
+ {
+   html, body
+   {
+     font-size: 1rem;
+     line-height: 1;
+   }
+
+   section
+   {
+     height: auto;
+     margin-bottom: 4vh;
+     padding: 0;
+     width: 100%;
+   }
+
+   h1
+   {
+     font-size: 1.75rem;
+   }
+
+
+   /* ************************ Globals *******************************/
+
+   .navbar {
+     padding: 0.9rem;
+     font-size: 1rem;
+   }
+
+   .btn
+   {
+     font-size: 1.02rem;
+     margin-bottom: 0.5em;
+
+   }
+
+
+   .bg-img
+   {
+     height: 40vh;
+     padding:0;
+   }
+
+   .hero
+   {
+     height: 50vh;
+   }
+
+   .section-header
+   {
+     padding-top: 1em;
+   }
+
+   .prog-text
+   {
+     display: flex;
+     padding: 0;
+
+   }
+
+   .serv-md
+   {
+     padding: 1em;
+   }
+
+
+
+
+   .contact-bg
+   {
+     height: auto;
+
+   }
+
+   .con-md
+   {
+     margin-top: 4vh;
+     margin-bottom: 4vh;
+     max-width: 50vw;
+   }
+
+
+   .copyright
+   {
+     padding-bottom: 4vh;
+   }
+
+   .footer-logo
+   {
+     width: 10vw;
+     height: 10vh;
+
+   }
+
+   .social-icons
+   {
+     justify-content: center;
+     padding-top: 1em;
+
+
+   }
+
+   .fab
+   {
+     font-size: 1rem;
+     margin-right: 0.7em;
+   }
+
+
+   .reverse-col
+   {
+     flex-direction: column-reverse;
+   }
+
+   .section
+   {
+     padding: 0;
+   }
+
+
+   /* ************************ Globals End *******************************/
+
+
+   .hero-text
+   {
+     font-size: 3rem;
+   }
+
+
+
+
+
+
+
+   /* ************************ Index *******************************/
+
+   /* Slider */
+
+   .carousel-caption
+   {
+     margin-bottom: 3.5em;
+   }
+
+   /* Slider End */
+
+
+
+   /* Colored Boxes */
+
+   .c-box
+   {
+     height: 24vh;
+     padding: 0;
+
+   }
+
+   .colored-boxes
+   {
+     padding: 0;
+   }
+
+   .clr-btn
+   {
+     width:100%;
+     height: 8vh;
+     border: 0.1vw solid white;
+
+     text-align: center;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     font-style: "Montserrat";
+     font-weight: bold;
+     padding: 0;
+
+   }
+
+   .colored-box
+   {
+     height: 8vh;
+
+   }
+
+
+   /* Color Boxes End */
+
+   /* Welcome */
+
+
+   .welcome-text
+   {
+     padding: 0.6em;
+   }
+
+   /* Welcome End */
+
+   /* Programs  */
+
+
+
+   .prog-body
+   {
+     padding: 2em;
+
+     max-width: 60vw;
+   }
+
+   /* Programs End */
+
+   /* Services */
+
+
+   /* Services End */
+
+
+   /* ************************ Index End  *******************************/
+
+
+
+
+
+
+   /* ************************ Enroll *******************************/
+
+   .enroll-section
+   {
+     height: auto;
+   }
+   .enroll-form
+   {
+
+     padding-bottom: 10vh;
+     justify-content: center;
+     align-items: center;
+   }
+
+
+   /* ************************ Enroll End *******************************/
+
+
+
+
+
+   /* ************************ OELC *******************************/
+
+
+   .person {
+     height: 10vh;
+     margin-bottom: 10vh;
+
+   }
+
+   .person1-img {
+
+     height: 10vh;
+
+   }
+
+   .person2-img {
+
+     height: 10vh;
+
+   }
+
+   .person3-img {
+
+     height: 10vh;
+
+   }
+
+   .person4-img {
+
+     height: 10vh;
+
+   }
+
+
+
+   /* ************************ OELC End *******************************/
+
+
+
+
+
+
+
+
+   /* ************************ Programs *******************************/
+
+
+   .program-caption
+   {
+     color: #FFFFFF;
+     width: 50%;
+     margin-bottom:10em;
+     margin-left: 3em;
+     padding-top: 15em;
+   }
+
+
+   /* Picture Boxes */
+
+   .p-box
+   {
+
+     height: auto;
+     padding: 0;
+     margin-bottom: 4vh;
+   }
+
+   .box {
+     height: 10vh;
+     width: 100%;
+     margin:0;
+     background: blue;
+     /* border: 0.5vw solid white; */
+     border-right: none;
+     padding: 0;
+   }
+
+
+
+   .picture-boxes {
+     /* margin-bottom: 4vh; */
+   }
+
+   .frame-box {
+     position: absolute;
+     /* left: 0; */
+     width: 100%;
+     height: 10vh;
+     /* border: 2px solid white; */
+     /* justify-content: center; */
+   }
+
+   .green-frame {
+     background-color: #BCCB2B;
+
+
+   }
+
+   .yellow-frame {
+     background-color: #EEC51B;
+   }
+
+   .red-frame {
+     background-color: #D44028;
+     border-bottom: none;
+   }
+
+   .picture {
+     display: flex;
+     flex-direction: row;
+     position: absolute;
+     width: 100%;
+     height: 10vh;
+     margin: 0;
+
+     color: #FFFFFF;
+     text-decoration: none;
+     font-style: "Montserrat";
+     font-weight: bold;
+     font-size: 2rem;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .picture-box-infant {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/play.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-bottom: 0.5vw solid white;
+     /* position: relative; */
+   }
+
+   .picture-box-toddler {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bubbles.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-bottom: 0.5vw solid white;
+     /* position: relative; */
+   }
+
+   .picture-box-kinder {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/paint.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* position: relative; */
+   }
+
+
+   /* Picture Boxes End  */
+
+
+   /* Infant */
+
+
+   .infant-bg
+   {
+     background: url("../assets/infant.png");
+     background-position: center;
+     background-size: cover;
+   }
+
+   .toddler-bg
+   {
+     background: url("../assets/toddler.png");
+     background-position: center;
+     background-size: cover;
+   }
+
+   .kinder-bg
+   {
+     background: url("../assets/kinder.png");
+     background-position: center;
+     background-size: cover;
+   }
+
+   /* Infant End */
+
+   /* ************************ Programs End *******************************/
+
+
+
+
+
+
+
+
+   /* ************************ Contact *******************************/
+
+
+   .contact-hero {
+     background: url("../assets/phone.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+
+   }
+
+
+   /* ************************ Contact End *******************************/
+
+
+
+
+
+
+
+   /* ************************ Infant *******************************/
+   .prog-img {
+     max-height: 50vh;
+     max-width: 50vw;
+     margin-top: 10vh;
+
+
+   }
+
+   .infant-hero
+   {
+     background: url("../assets/infant.png");
+     background-position: center;
+     background-size: cover;
+   }
+
+
+   /* ************************ Infant End *******************************/
+
+
+
+
+   /* ************************ Toddler *******************************/
+   .toddler-hero {
+     background: url("../assets/toddler.png");
+     background-position: center;
+     background-size: cover;
+   }
+
+    /* ************************ Toddler End *******************************/
+
+
+
+    /* ************************ Kinder  *******************************/
+
+    .kinder-hero {
+      background: url("../assets/kinder.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /* ************************ Kinder End *******************************/
+
+}
+@media screen and (max-width: 600px)
+{
+  html, body
+  {
+    font-size: 0.7rem;
+
+  }
+
+  .loader-img
+  {
+    width: 20vw;
+    /* height: 20vh; */
+  }
+
+  .hero-text
+  {
+    font-size: 4rem;
+  }
+
+  .program-caption
+  {
+    margin-right: 12em;
+    padding-top: 20em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px)
+{
+
+  html, body
+  {
+    line-height: 1.1;
+
+  }
+
+  .loader_img
+  {
+    width: 25vw;
+  }
+
+  section
+  {
+    margin-bottom: 10vh;
+  }
+
+  .carousel-caption
+  {
+    margin-bottom: 6em;
+  }
+  .hero-text
+  {
+    font-size: 4.5rem;
+  }
+
+  .c-box
+  {
+    height: auto;
+  }
+
+  .colored-box
+  {
+    height: auto;
+  }
+
+  .clr-btn
+  {
+    height: 24vh;
+  }
+
+  .prog-body
+  {
+    max-width: 40vw;
+  }
+
+  .program-caption
+  {
+    margin-right: 20em;
+    margin-bottom: 10em;
+    padding-top: 25em;
+  }
+
+  .p-box
+  {
+    height: auto;
+  }
+
+  .serv-md
+  {
+    padding: 1em;
+  }
+
+  .enroll-bg
+  {
+    padding: 0;
+  }
+
+
+}
